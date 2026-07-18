@@ -1,151 +1,498 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Plastic Poultry Crates | Live Bird Transport & Processing | PoultryCrates.com</title>
-<meta name="description" content="Plastic poultry crates for live bird transport and processed poultry handling. Ventilated walls, nestable, HACCP colour-coded. Meets EU animal welfare standards. Elipacko.">
-<meta property="og:title" content="Plastic Poultry Crates — Live Transport & Processing">
-<meta property="og:description" content="Ventilated plastic poultry crates for live bird transport and post-processing handling. Nestable, colour-coded, HACCP ready. Elipacko manufacturer direct.">
-<meta property="og:url" content="https://poultrycrates.com">
-<meta property="og:type" content="website">
-<link rel="canonical" href="https://poultrycrates.com">
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Product","name":"Plastic Poultry Crate","description":"Ventilated polypropylene poultry crates for live bird transport and processed poultry handling. Nestable 8:1 empty. HACCP colour-coded options. EU animal welfare compliant.","brand":{"@type":"Brand","name":"Elipacko"},"url":"https://poultrycrates.com","offers":{"@type":"Offer","availability":"https://schema.org/InStock","url":"https://elipacko.com"}}
-</script>
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Segoe UI',Arial,sans-serif;background:#161210;color:#e0d8cc}
-header{background:#1a1410;border-bottom:3px solid #8b5e3c;padding:16px 5%;display:flex;align-items:center;justify-content:space-between}
-.logo{color:#c89060;font-size:1.3rem;font-weight:800}
-.logo em{color:#fff;font-style:normal}
-.nav-cta{background:#8b5e3c;color:#fff;padding:9px 18px;text-decoration:none;font-weight:700;font-size:0.84rem}
-.hero{background:linear-gradient(180deg,#1a1410 0%,#0e0c08 100%);padding:80px 5%}
-.hero-inner{display:grid;grid-template-columns:3fr 2fr;gap:40px;align-items:center;max-width:1100px;margin:0 auto}
-.hero h1{font-size:2.7rem;font-weight:900;color:#fff;line-height:1.1}
-.hero h1 .line2{color:#c89060}
-.hero p{color:#7a6a58;line-height:1.78;margin:18px 0 30px;font-size:1rem}
-.hero a.btn{background:#8b5e3c;color:#fff;padding:13px 28px;text-decoration:none;font-weight:800;font-size:0.93rem;display:inline-block}
-.hero-stats{display:flex;flex-direction:column;gap:16px}
-.stat-pill{background:#1e1a14;border:1px solid #2e2418;padding:18px 20px;border-left:4px solid #c89060}
-.stat-pill .n{font-size:1.6rem;font-weight:900;color:#c89060}
-.stat-pill .l{font-size:0.72rem;color:#5a4a38;text-transform:uppercase;letter-spacing:1px;margin-top:4px}
-.three-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:3px}
-.three-grid img{width:100%;height:300px;object-fit:cover;display:block}
-.use-cases{padding:60px 5%;background:#1a1410}
-.use-cases h2{font-size:1.8rem;font-weight:900;color:#fff;margin-bottom:6px;max-width:880px;margin-left:auto;margin-right:auto}
-.use-cases .lead{color:#5a4a38;margin-bottom:32px;max-width:880px;margin-left:auto;margin-right:auto}
-.uc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:880px;margin:0 auto}
-.uc-card{background:#111;border:1px solid #2a2018;padding:28px 22px}
-.uc-card .phase{font-size:0.72rem;color:#8b5e3c;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:12px}
-.uc-card h3{font-size:1.05rem;font-weight:800;color:#fff;margin-bottom:10px}
-.uc-card p{font-size:0.88rem;color:#6a5a48;line-height:1.7}
-.compare-table-wrap{max-width:880px;margin:0 auto;padding:60px 5%}
-.compare-table-wrap h2{font-size:1.8rem;font-weight:900;color:#fff;margin-bottom:20px}
-.compare-table-wrap p{color:#7a6a58;line-height:1.8;margin-bottom:20px}
-.ct{width:100%;border-collapse:collapse;font-size:0.88rem}
-.ct thead th{background:#8b5e3c;color:#fff;padding:11px 14px;text-align:left;font-weight:700;font-size:0.8rem;text-transform:uppercase}
-.ct tbody td{padding:10px 14px;border-bottom:1px solid #2a2018;color:#7a6a58}
-.ct tbody tr:nth-child(even) td{background:#1a1410}
-.ct .good{color:#6dbf6d;font-weight:700}
-.ct .bad{color:#bf6d6d}
-.copy-block{max-width:880px;margin:0 auto;padding:0 5% 60px}
-.copy-block h3{font-size:1.15rem;font-weight:700;color:#c89060;margin:28px 0 10px}
-.copy-block p{color:#7a6a58;line-height:1.85;margin-bottom:14px}
-.cta-end{background:#8b5e3c;padding:60px 5%;text-align:center}
-.cta-end h2{font-size:1.9rem;font-weight:900;color:#fff;margin-bottom:10px}
-.cta-end p{color:#f5e8d8;margin-bottom:26px;opacity:0.85}
-.cta-end a{background:#fff;color:#8b5e3c;padding:14px 36px;text-decoration:none;font-weight:900;font-size:0.98rem;display:inline-block}
-footer{background:#0c0a08;color:#3a2a18;text-align:center;padding:20px;font-size:0.78rem}
-footer a{color:#5a4a38;text-decoration:none}
-@media(max-width:700px){.hero-inner{grid-template-columns:1fr}.hero-stats{flex-direction:row;flex-wrap:wrap}.three-grid,.uc-grid{grid-template-columns:1fr}}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Poultry Crates | Live Bird Transport PP/HDPE Stackable Ventilated Crates | PoultryCrates.com</title>
+  <meta name="description" content="Food-grade PP and HDPE live bird transport crates: EU regulation compliant, stackable 8+ high, fully ventilated, custom sizes available. Supplied by Elipacko." />
+  <link rel="canonical" href="https://poultrycrates.com/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Poultry Crates — Live Bird Transport, EU Compliant, Stackable | PoultryCrates.com" />
+  <meta property="og:description" content="Ventilated PP/HDPE poultry transport crates for live bird handling. Stackable 8+ high, EU Animal Welfare compliant, food-grade, custom sizes. Sourced through Elipacko." />
+  <meta property="og:url" content="https://poultrycrates.com/" />
+  <meta property="og:site_name" content="PoultryCrates.com" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Poultry Crates",
+    "description": "Live bird transport crates in food-grade PP and HDPE. EU animal welfare regulation compliant, stackable 8+ high, ventilated, custom sizes available.",
+    "brand": {
+      "@type": "Brand",
+      "name": "Elipacko"
+    },
+    "url": "https://poultrycrates.com/",
+    "offers": {
+      "@type": "Offer",
+      "url": "https://elipacko.com",
+      "seller": {
+        "@type": "Organization",
+        "name": "Elipacko"
+      }
+    }
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --cream: #fafaf8;
+      --red: #b91c1c;
+      --red-dark: #991818;
+      --text: #1c1c19;
+      --muted: #5c5c57;
+      --rule: #dedad3;
+      --warm: #f0ece7;
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--cream);
+      color: var(--text);
+      font-family: -apple-system, 'Helvetica Neue', Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1.7;
+    }
+
+    /* NAV */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 200;
+      background: var(--cream);
+      border-bottom: 3px solid var(--red);
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 clamp(16px, 5vw, 80px);
+    }
+    .brand {
+      font-size: 0.8rem;
+      font-weight: 800;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: var(--text);
+    }
+    .nav-links { list-style: none; display: flex; gap: 24px; }
+    .nav-links a {
+      font-size: 0.77rem;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: var(--muted);
+      text-decoration: none;
+    }
+    .nav-links a:hover { color: var(--red); }
+
+    /* HERO -- editorial full-width */
+    .hero {
+      padding: clamp(64px, 10vw, 130px) clamp(16px, 6vw, 100px) clamp(52px, 7vw, 100px);
+      border-bottom: 1px solid var(--rule);
+      max-width: 100%;
+    }
+    .issue-line {
+      font-size: 0.7rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .issue-line::before {
+      content: '';
+      display: block;
+      width: 32px;
+      height: 2px;
+      background: var(--red);
+    }
+    .hero h1 {
+      font-size: clamp(2.8rem, 7vw, 5.8rem);
+      font-weight: 900;
+      line-height: 1.02;
+      letter-spacing: -0.03em;
+      max-width: 900px;
+      margin-bottom: 30px;
+    }
+    .hero h1 mark {
+      background: var(--red);
+      color: #fff;
+      padding: 0 8px;
+      font-style: normal;
+    }
+    .hero-deck {
+      max-width: 620px;
+      font-size: 1.15rem;
+      color: var(--muted);
+      line-height: 1.55;
+      margin-bottom: 36px;
+    }
+    .pull-quote {
+      border-top: 3px solid var(--red);
+      border-bottom: 1px solid var(--rule);
+      padding: 22px 0;
+      max-width: 680px;
+    }
+    .pull-quote blockquote {
+      font-size: 1.18rem;
+      font-weight: 600;
+      line-height: 1.45;
+      color: var(--text);
+      margin-bottom: 10px;
+    }
+    .pull-quote cite {
+      font-size: 0.75rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      font-style: normal;
+    }
+
+    /* MAIN GRID */
+    .main-grid {
+      display: grid;
+      grid-template-columns: 1fr 290px;
+      gap: 56px;
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: clamp(30px, 5vw, 64px) clamp(16px, 5vw, 60px);
+      align-items: start;
+    }
+    @media (max-width: 840px) {
+      .main-grid { grid-template-columns: 1fr; }
+      .sidebar { order: -1; }
+    }
+
+    /* EDITORIAL BODY */
+    .body-text h2 {
+      font-size: 1.45rem;
+      font-weight: 800;
+      letter-spacing: -0.018em;
+      margin: 46px 0 13px;
+      color: var(--text);
+    }
+    .body-text h2 span {
+      display: inline-block;
+      background: var(--red);
+      color: #fff;
+      font-size: 0.65rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      padding: 2px 8px;
+      vertical-align: middle;
+      margin-right: 8px;
+    }
+    .body-text h2:first-child { margin-top: 0; }
+    .body-text p { margin-bottom: 18px; color: #2a2a27; }
+    .body-text ul { margin: 0 0 18px 22px; }
+    .body-text ul li { margin-bottom: 9px; }
+    .body-text strong { color: var(--text); }
+
+    .highlight-box {
+      background: var(--warm);
+      border-left: 4px solid var(--red);
+      padding: 18px 22px;
+      margin: 26px 0;
+      font-size: 0.94rem;
+    }
+    .highlight-box .hl-label {
+      font-size: 0.68rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      font-weight: 800;
+      color: var(--red);
+      margin-bottom: 8px;
+      display: block;
+    }
+
+    /* SIDEBAR */
+    .sidebar { position: sticky; top: 68px; }
+
+    .spec-card {
+      background: var(--warm);
+      border-top: 4px solid var(--red);
+      padding: 0 0 4px;
+      margin-bottom: 20px;
+      overflow: hidden;
+    }
+    .spec-card-title {
+      padding: 14px 20px;
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--red);
+      background: #e8e3dd;
+    }
+    .spec-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 9px 20px;
+      border-bottom: 1px solid var(--rule);
+      font-size: 0.84rem;
+      gap: 6px;
+    }
+    .sl-k { color: var(--muted); font-size: 0.82rem; }
+    .sl-v { font-weight: 700; text-align: right; font-size: 0.84rem; }
+
+    .cta-strip {
+      background: var(--red);
+      color: #fff;
+      padding: 24px 20px;
+      text-align: center;
+    }
+    .cta-strip p { font-size: 0.88rem; opacity: 0.93; margin-bottom: 14px; line-height: 1.5; }
+    .cta-strip a {
+      display: inline-block;
+      background: #fff;
+      color: var(--red-dark);
+      font-weight: 800;
+      font-size: 0.8rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 11px 20px;
+    }
+    .cta-strip a:hover { background: #f0ece7; }
+
+    /* FAQ */
+    .faq-section {
+      max-width: 800px;
+      margin: 0 auto clamp(50px, 7vw, 100px);
+      padding: 0 clamp(16px, 5vw, 60px);
+    }
+    .faq-section > h2 {
+      font-size: 1.4rem;
+      font-weight: 800;
+      margin-bottom: 22px;
+      border-bottom: 2px solid var(--rule);
+      padding-bottom: 14px;
+      letter-spacing: -0.015em;
+    }
+    .qa { border-bottom: 1px solid var(--rule); }
+    .qa-q {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      padding: 17px 0;
+      cursor: pointer;
+      font-size: 0.96rem;
+      font-weight: 700;
+      color: var(--text);
+      background: none;
+      border: none;
+      width: 100%;
+      text-align: left;
+      font-family: inherit;
+    }
+    .qa-q:hover { color: var(--red); }
+    .qa-icon {
+      color: var(--red);
+      font-size: 1.25rem;
+      flex-shrink: 0;
+      transition: transform 0.22s;
+      width: 22px;
+      text-align: center;
+    }
+    .qa.open .qa-icon { transform: rotate(45deg); }
+    .qa-a { max-height: 0; overflow: hidden; transition: max-height 0.32s ease; }
+    .qa.open .qa-a { max-height: 400px; }
+    .qa-a p { padding-bottom: 17px; color: var(--muted); line-height: 1.68; font-size: 0.95rem; }
+
+    /* FOOTER */
+    footer {
+      background: #1c1c19;
+      color: #909088;
+      padding: 30px 20px;
+      text-align: center;
+      font-size: 0.81rem;
+      letter-spacing: 0.04em;
+    }
+    footer a { color: #c0c0b8; text-decoration: none; }
+    footer a:hover { color: var(--red); }
+    footer span.sep { margin: 0 10px; opacity: 0.3; }
+  </style>
 </head>
 <body>
-<header>
-  <div class="logo">Poultry<em>Crates</em>.com</div>
-  <a href="https://elipacko.com" class="nav-cta">Get Quote →</a>
-</header>
 
-<section class="hero">
-  <div class="hero-inner">
-    <div>
-      <h1>Plastic Poultry Crates<br><span class="line2">for Live Transport<br>& Processing Lines</span></h1>
-      <p>Ventilated PP crates for live bird transport — nestable 8:1 empty, animal welfare compliant. Solid-wall variants for processed product cold chain. HACCP colour options from Elipacko.</p>
-      <a href="https://elipacko.com" class="btn">Request Specs & Pricing →</a>
+  <nav>
+    <a class="brand" href="/">PoultryCrates.com</a>
+    <ul class="nav-links">
+      <li><a href="#materials">Materials</a></li>
+      <li><a href="#regulation">EU Regulation</a></li>
+      <li><a href="#stacking">Stacking</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <div class="issue-line">Live Bird Transport Packaging</div>
+    <h1>Poultry Crates:<br /><mark>Ventilated, Stackable,</mark><br />Regulation-Ready</h1>
+    <p class="hero-deck">Food-grade PP and HDPE live bird transport crates engineered for welfare compliance, maximum stack height, and decades of repeated use in the harshest farm-to-slaughter environments.</p>
+    <div class="pull-quote">
+      <blockquote>"A crate failure during live bird transport doesn't just mean broken equipment -- it means welfare violations, contamination risk, and potential regulatory action at the processing plant gate."</blockquote>
+      <cite>-- Poultry Logistics Compliance, Elipacko</cite>
     </div>
-    <div class="hero-stats">
-      <div class="stat-pill"><div class="n">8:1</div><div class="l">Nest Ratio Empty</div></div>
-      <div class="stat-pill"><div class="n">−30°C</div><div class="l">Cold Chain Rated</div></div>
-      <div class="stat-pill"><div class="n">6 Colour</div><div class="l">HACCP Options</div></div>
-      <div class="stat-pill"><div class="n">100+</div><div class="l">Trip Cycles</div></div>
+  </header>
+
+  <div class="main-grid">
+    <div class="body-text">
+
+      <h2 id="materials"><span>Spec</span>PP vs HDPE for Live Bird Transport</h2>
+      <p>Poultry transport crates are almost universally manufactured from either <strong>polypropylene (PP)</strong> or <strong>high-density polyethylene (HDPE)</strong>, both food-grade and both capable of meeting the hygiene and structural demands of repeated wash-and-reuse cycles. Understanding the difference between these two materials is the first step in procurement.</p>
+      <p><strong>Polypropylene (PP)</strong> is the dominant choice for new poultry crate production globally. It offers excellent stiffness, low tare weight, and good resistance to the cleaning chemicals (sodium hypochlorite, peracetic acid) used in poultry plant washdown systems. PP crates are lighter per unit, which matters in high-stack configurations where total column weight becomes a handling concern. The standard food-grade PP specification for poultry crates is homopolymer PP, natural or white, without any recycled content in direct animal contact surfaces.</p>
+      <p><strong>HDPE</strong> is preferred in markets with extremely cold winters or where crates will experience more severe mechanical abuse -- rough terrain farm roads, older loading equipment, or high-frequency drop events. HDPE retains ductility at lower temperatures where PP can become brittle, reducing crack propagation risk in outdoor winter loading. HDPE crates are slightly heavier for the same structural performance, but the impact resistance advantage is significant in the right application.</p>
+      <p>Both materials must comply with food-contact regulations. In Europe, this means compliance with EU Regulation 10/2011 on plastic materials in contact with food. In the US, FDA 21 CFR 177.1520 applies. Any pigments or additives used in colouring the crates must also comply -- buyers should request full material declarations and, for EU export, a Declaration of Compliance (DoC) from the crate manufacturer.</p>
+
+      <div class="highlight-box">
+        <span class="hl-label">Hygiene Critical Point</span>
+        Poultry crates must withstand steam cleaning at 82 degrees C or chemical disinfection at full recommended concentrations multiple times per week for 10+ year lifespans. Specify this requirement explicitly and request material compatibility data for your specific cleaning agents.
+      </div>
+
+      <h2 id="regulation"><span>Compliance</span>EU Animal Welfare Regulation for Live Bird Transport</h2>
+      <p>In the European Union, the transport of live poultry is governed primarily by <strong>Council Regulation (EC) No 1/2005</strong> on the protection of animals during transport. This regulation sets binding requirements for space allowances, ventilation, journey duration, and crate design that directly affect the physical specification of transport crates purchased for use in EU markets or by EU-certified operators.</p>
+
+      <p>The regulation requires that crates used for live bird transport provide sufficient space for birds to stand in a natural position, lie down, and turn around without difficulty -- translated into practical terms, this means that the internal height, floor space per bird, and ventilation area of the crate must meet minimum thresholds by species and bird size. For standard broilers, the space allowance minimum during transport is 160-200 cm2 per bird depending on journey length and seasonal conditions. Smaller birds (day-old chicks, poults) have proportionally larger per-bird space requirements under the same regulation.</p>
+
+      <p><strong>Ventilation</strong> is one of the most technically demanding requirements. The regulation requires adequate air flow to prevent heat stress, which is the leading cause of mortality in live bird transport. Compliant crates achieve this through side ventilation slots, end-panel perforation, and in some designs, elevated floor grids that allow air circulation from below. The open area as a percentage of sidewall surface varies by manufacturer design, but typically runs 25-40% of total sidewall area in compliant crates. For transport in warm climates or during European summer months, buyers should verify that ventilation specifications meet the higher thresholds recommended by the European Food Safety Authority (EFSA) scientific opinions on broiler transport.</p>
+
+      <p>Beyond the core 1/2005 Regulation, EU operators must also consider:</p>
+      <ul>
+        <li><strong>Regulation (EC) No 853/2004</strong> (hygiene rules for food of animal origin) which imposes cleanliness requirements on equipment used at all stages of the food chain, including live transport.</li>
+        <li><strong>National implementing regulations</strong> -- several EU member states (Germany, Netherlands, Denmark) have adopted stricter national standards on space allowances and journey duration that exceed the EU baseline.</li>
+        <li><strong>Third-country export requirements</strong> -- operators exporting live birds outside the EU face additional certification requirements that may reference crate specifications.</li>
+      </ul>
+
+      <h2 id="stacking"><span>Engineering</span>Stackable Design: 8+ High and What That Really Means</h2>
+      <p>The ability to stack poultry crates 8 or more layers high is not simply a logistical convenience -- it is a structural engineering challenge that determines whether your entire column of loaded crates will remain stable through the vibration, cornering forces, and sudden stops of a live bird truck journey.</p>
+
+      <p>A fully loaded poultry crate holding 8-12 broilers of 2.5-3 kg each weighs approximately 25-35 kg gross. Eight crates stacked produces a column load of 200-280 kg on the bottom crate -- and this load is dynamic, not static, due to road vibration. Standard compliance poultry crates achieve 8-high stacking through several specific design features:</p>
+      <ul>
+        <li><strong>Corner pillar load paths:</strong> Stacking load is channelled through corner columns or ribs, keeping sidewall stress low and preventing lateral bulge that could pinch birds.</li>
+        <li><strong>Male-female stacking interlocks:</strong> Most modern crate designs incorporate a positive-location interlock between the top rim of one crate and the base of the crate above, preventing lateral slip during transport. This is critical on cornering.</li>
+        <li><strong>Consistent dimensional tolerances:</strong> A mixed fleet of crates from multiple suppliers with varying tolerances will not stack reliably. Buyers building large crate pools should standardise on a single supplier and verify that dimensional tolerances are within +/-2 mm on critical interlock features.</li>
+        <li><strong>Creep resistance:</strong> Under sustained load, PP and HDPE will deform slowly (creep). Quality crates use polymer grades with anti-creep additives and wall geometries that minimise sustained bending stress. Ask your supplier for long-term creep test data at expected load.</li>
+      </ul>
+
+      <p>Some operations require 10-high stacking in stationary storage contexts (lairage areas, overnight holding). In these cases, the crate's static load rating (which can be significantly higher than its dynamic transport rating) must be confirmed with the manufacturer separately. A crate rated for 8-high transport may safely achieve 10-12-high static storage.</p>
+
+      <h2>Custom Sizes and Special Configurations</h2>
+      <p>While standard poultry crate sizes exist (the most common EU format is approximately 600 x 400 x 270 mm for broilers, and the standard North American format runs 24 x 18 x 10 inches), many large integrators work with custom dimensions optimised for their specific truck body widths, truck tie-down systems, and processing plant equipment.</p>
+      <p>Custom sizing is available from most tooled manufacturers at minimum order quantities that vary by tooling cost -- typically 500-2,000 crates per new design. Key custom specifications buyers often request include: modified internal height for specific bird weight categories (heavier birds need more head clearance), additional ventilation panels for tropical deployment, integrated tracking attachment points for RFID tags, and custom colouring or permanent marking for traceability in multi-operator pooled fleets.</p>
+      <p>Elipacko works with manufacturers across multiple tooling bases to source the right custom or standard crate specification for your operation -- including managing the regulatory documentation, quality inspection, and logistics for international shipments.</p>
+
     </div>
+
+    <aside class="sidebar">
+      <div class="spec-card">
+        <div class="spec-card-title">Poultry Crate Quick Specs</div>
+        <div class="spec-line"><span class="sl-k">Primary materials</span><span class="sl-v">Food-grade PP, HDPE</span></div>
+        <div class="spec-line"><span class="sl-k">EU standard broiler size</span><span class="sl-v">600 x 400 x 270 mm</span></div>
+        <div class="spec-line"><span class="sl-k">NA standard size</span><span class="sl-v">24 x 18 x 10 in</span></div>
+        <div class="spec-line"><span class="sl-k">Stacking height</span><span class="sl-v">8+ loaded / 12+ empty</span></div>
+        <div class="spec-line"><span class="sl-k">Ventilation open area</span><span class="sl-v">25-40% of sidewall</span></div>
+        <div class="spec-line"><span class="sl-k">EU animal welfare regs</span><span class="sl-v">EC 1/2005 compliant</span></div>
+        <div class="spec-line"><span class="sl-k">Food contact compliance</span><span class="sl-v">EU 10/2011 / FDA 177.1520</span></div>
+        <div class="spec-line"><span class="sl-k">Wash temperature</span><span class="sl-v">Up to 82 degrees C</span></div>
+        <div class="spec-line"><span class="sl-k">Chemical resistance</span><span class="sl-v">NaOCl, peracetic acid</span></div>
+        <div class="spec-line"><span class="sl-k">Typical service life</span><span class="sl-v">8-15 years</span></div>
+        <div class="spec-line"><span class="sl-k">Custom sizes</span><span class="sl-v">Available (MOQ 500+)</span></div>
+        <div class="spec-line"><span class="sl-k">Recyclability</span><span class="sl-v">Fully recyclable (PP/HDPE)</span></div>
+      </div>
+
+      <div class="cta-strip">
+        <p>Source EU-compliant, food-grade poultry transport crates for your flock. Elipacko handles specification, inspection, and delivery.</p>
+        <a href="https://elipacko.com" target="_blank" rel="noopener">Request a Quote</a>
+      </div>
+    </aside>
   </div>
-</section>
 
-<div class="three-grid">
-  <img src="https://brazenproducts.github.io/elipacko-assets/19.jpg" alt="Plastic poultry crate live bird">
-  <img src="https://brazenproducts.github.io/elipacko-assets/17.jpg" alt="Poultry processing crates stacked">
-  <img src="https://brazenproducts.github.io/elipacko-assets/crab-box.jpg" alt="Food grade poultry crate">
-</div>
+  <section class="faq-section">
+    <h2 id="faq">Frequently Asked Questions</h2>
 
-<section class="use-cases">
-  <h2>Three Use Cases. One Crate System.</h2>
-  <p class="lead">Elipacko's poultry crate range covers all three stages of the supply chain:</p>
-  <div class="uc-grid">
-    <div class="uc-card">
-      <div class="phase">Stage 1</div>
-      <h3>Live Bird Transport</h3>
-      <p>Ventilated walls with optimised perforation pattern maintain airflow around birds during transport. Meets EU Council Directive 93/119/EC and Regulation (EC) 1/2005 animal transport welfare standards. Perforations are sized to prevent wing and leg entrapment.</p>
+    <div class="qa">
+      <button class="qa-q" aria-expanded="false">
+        What does EU Regulation 1/2005 require for poultry transport crates specifically?
+        <span class="qa-icon">+</span>
+      </button>
+      <div class="qa-a">
+        <p>Regulation 1/2005 requires that containers used for live poultry transport provide sufficient space for birds to stand naturally, allow adequate ventilation to prevent heat stress, and be constructed so they can be cleaned and disinfected effectively. Specific space allowances (expressed as cm2 per bird) are set by species and body weight, and increase for journeys over 8 hours. The regulation also requires that loading density be reduced in hot weather conditions. National authorities enforce compliance, and serious violations can result in removal of transport authorisation.</p>
+      </div>
     </div>
-    <div class="uc-card">
-      <div class="phase">Stage 2</div>
-      <h3>Processing Line Handling</h3>
-      <p>After slaughter, solid-wall variants move processed product through the evisceration, chilling, and portioning stages. Fully radiused internal corners eliminate product trap points. Compatible with overhead conveyor, roller conveyor, and manual handling.</p>
+
+    <div class="qa">
+      <button class="qa-q" aria-expanded="false">
+        How often do poultry transport crates need to be replaced?
+        <span class="qa-icon">+</span>
+      </button>
+      <div class="qa-a">
+        <p>Well-maintained food-grade PP or HDPE poultry crates typically achieve 8-15 years of service life in intensive use environments -- meaning daily loading and unloading cycles, multiple washes per week, and constant stacking under load. The primary failure modes are cracking at stress concentration points (corners, vent slots), hinge wear if applicable, and UV degradation in outdoor storage. Regular inspection for cracks is essential: a cracked crate is both a biosecurity risk (harbours pathogens) and a welfare risk (sharp edges). Replace any crate showing structural cracks immediately.</p>
+      </div>
     </div>
-    <div class="uc-card">
-      <div class="phase">Stage 3</div>
-      <h3>Cold Chain & Export</h3>
-      <p>Solid-wall crates with lid seal product at the chiller before palletising for distribution or export. Blast-freeze rated to −30°C. ISPM 15 compliant — no wood content means no phytosanitary documentation for international shipments.</p>
+
+    <div class="qa">
+      <button class="qa-q" aria-expanded="false">
+        Can poultry transport crates be used for other poultry species?
+        <span class="qa-icon">+</span>
+      </button>
+      <div class="qa-a">
+        <p>Standard broiler crates are designed for 1.5-3.5 kg birds with floor space and height appropriate for that weight class. Turkeys, ducks, and geese require different crate dimensions -- typically taller internal heights and larger floor space per bird. Day-old chick boxes are a completely different category: they are smaller, require temperature insulation rather than ventilation, and are often single-use. Always specify the exact species and target bird weight when ordering, and verify that the crate dimensions meet the applicable space allowance requirements for that species under the relevant welfare regulation.</p>
+      </div>
     </div>
-  </div>
-</section>
 
-<div class="compare-table-wrap">
-  <h2>Plastic vs Wire Mesh Poultry Crates</h2>
-  <p>Wire mesh crates have been the live transport standard for decades — but their operational disadvantages over a 3–5 year period consistently justify the switch to plastic for most operations above 50,000 birds per week.</p>
-  <table class="ct">
-    <thead><tr><th>Factor</th><th>Wire Mesh Crate</th><th>Plastic PP Crate</th></tr></thead>
-    <tbody>
-      <tr><td>Animal welfare compliance</td><td class="bad">Limb entrapment risk</td><td class="good">Optimised perforation — compliant</td></tr>
-      <tr><td>Bacterial contamination</td><td class="bad">Wire joints trap organic matter</td><td class="good">Smooth moulded surface</td></tr>
-      <tr><td>Sanitisation</td><td class="bad">Wire joints resist penetration</td><td class="good">Full surface access</td></tr>
-      <tr><td>Feather / blood contamination</td><td class="bad">Catches in wire mesh</td><td class="good">Rinses clean in seconds</td></tr>
-      <tr><td>Empty nest ratio</td><td class="bad">2:1 to 3:1</td><td class="good">8:1</td></tr>
-      <tr><td>Service life</td><td>5–8 years</td><td class="good">10–15 years</td></tr>
-      <tr><td>Injury rate (birds)</td><td class="bad">Higher — wire edges</td><td class="good">Lower — smooth radiused edges</td></tr>
-      <tr><td>ISPM 15 compliance</td><td>Depends on pallet base</td><td class="good">Yes — no wood content</td></tr>
-    </tbody>
-  </table>
-</div>
+    <div class="qa">
+      <button class="qa-q" aria-expanded="false">
+        What cleaning and disinfection protocols are compatible with PP and HDPE poultry crates?
+        <span class="qa-icon">+</span>
+      </button>
+      <div class="qa-a">
+        <p>Both PP and HDPE are compatible with the standard poultry industry wash protocols: high-pressure water washing (up to 82 degrees C with appropriate detergents), sodium hypochlorite (bleach) solutions at standard use concentrations, peracetic acid-based sanitisers, quaternary ammonium compounds, and formaldehyde-based disinfectants where permitted. Avoid concentrated formaldehyde above 5% for extended contact, and verify solvent-based degreaser compatibility before use. Most manufacturers can provide a chemical compatibility chart on request. Crates should be fully dry before loading to prevent condensation-related welfare issues.</p>
+      </div>
+    </div>
 
-<div class="copy-block">
-  <h3>Colour Coding for Multi-Species HACCP Plans</h3>
-  <p>Operations processing both broilers and layers, or poultry alongside other species, typically require physical colour separation of crates between species or zones under their HACCP plan. Elipacko compounds colour at the resin level — the colour is structural, not a surface coat, and survives repeated high-pressure hot water cleaning indefinitely.</p>
-  <p>Standard HACCP colour options include white (processed product), yellow (live bird), red (reject / condemnation), blue (chiller), and green (despatch). Custom RAL colours are available for facilities with existing colour-coding systems.</p>
+    <div class="qa">
+      <button class="qa-q" aria-expanded="false">
+        Are poultry crates recyclable at end of life?
+        <span class="qa-icon">+</span>
+      </button>
+      <div class="qa-a">
+        <p>Yes. PP and HDPE are both high-value recyclable materials. At end of service life, clean poultry crates (free of biological contamination) can be shredded and recycled through standard plastic recycling streams. Many manufacturers offer take-back programmes, and some produce crates containing a percentage of post-industrial recycled PP from their own waste streams (not in food-contact surfaces in most designs). Recycled content is not typically permitted on food-contact inner surfaces of EU-compliant crates, but outer non-contact surfaces may incorporate recycled materials. Confirm with your supplier before making sustainability claims in marketing materials.</p>
+      </div>
+    </div>
+  </section>
 
-  <h3>Return Freight and Empty Storage</h3>
-  <p>The 8:1 nesting ratio of Elipacko's live bird crates means a truck that delivers 800 loaded crates can return with all 800 empty crates in the space of 100 loaded crates. For operations running dedicated return trips, this alone reduces back-haul freight cost by 50–60% compared to wire crates with a 2:1 nest ratio. Contact <a href="https://elipacko.com" style="color:#c89060">Elipacko</a> for bulk pricing and lead times.</p>
-</div>
+  <footer>
+    <p>
+      <strong>poultrycrates.com</strong>
+      <span class="sep">|</span>
+      Live bird transport packaging by <a href="https://elipacko.com" target="_blank" rel="noopener">Elipacko</a>
+      <span class="sep">|</span>
+      &copy; 2026 PoultryCrates.com
+    </p>
+  </footer>
 
-<div class="cta-end">
-  <h2>Ready to Upgrade Your Poultry Crate Fleet?</h2>
-  <p>Live bird, processing line, and cold chain variants available. HACCP colour coding and custom print from Elipacko.</p>
-  <a href="https://elipacko.com">Get a Quote from Elipacko →</a>
-</div>
-
-<footer>
-  <p>PoultryCrates.com — plastic poultry crate resource. Manufacturer: <a href="https://elipacko.com">Elipacko</a></p>
-</footer>
+  <script>
+    document.querySelectorAll('.qa').forEach(function(qa) {
+      qa.querySelector('.qa-q').addEventListener('click', function() {
+        var isOpen = qa.classList.contains('open');
+        document.querySelectorAll('.qa.open').forEach(function(el) {
+          el.classList.remove('open');
+          el.querySelector('.qa-q').setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+          qa.classList.add('open');
+          qa.querySelector('.qa-q').setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+  </script>
 </body>
 </html>
